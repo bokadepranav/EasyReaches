@@ -1,0 +1,1796 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------header---------------------- */
+
+#header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/bg-1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 40px;
+  color: white;
+}
+
+.logo span {
+  color: rgb(0, 79, 108);
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 79, 108);
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(0, 79, 108);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.header-text {
+  margin-top: 10%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 10px;
+  color: rgb(0, 79, 108);
+}
+
+.header-text h1 span {
+  color: rgb(0, 176, 255);
+}
+
+.header-text h4 {
+  margin-top: 5px;
+  font-size: 40px;
+  color: rgb(0, 176, 255);
+}
+
+.header-text p {
+  margin-top: 35px;
+  font-size: 16px;
+  color: rgba(0, 79, 108, 0.7);
+  margin-bottom: 40px;
+}
+
+.hollow-btn {
+  background-color: transparent;
+  border: solid 2px rgb(0, 79, 108);
+  border-radius: 150px;
+  padding: 10px;
+  color: rgb(0, 79, 108);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-img {
+  height: 750px;
+  width: 450px;
+}
+
+/* ----------------------about--------------------- */
+
+#about {
+  padding: 80px 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 40%;
+}
+
+.about-col-2 {
+  flex-basis: 50%;
+}
+
+.about-col-1 img {
+  width: 400px;
+}
+
+.about-col-2 h4 {
+  color: rgb(0, 176, 255);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.about-col-2 hr {
+  color: rgb(0, 176, 255);
+  margin-top: 10px;
+}
+
+.about-col-2 h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  color: rgb(0, 79, 108);
+}
+
+.about-col-2 p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgba(0, 79, 108, 0.6);
+  text-align: justify;
+}
+
+.about-col-2 ul {
+  margin-top: 20px;
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.about-col-2 li {
+  color: rgb(0, 176, 255);
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* -------------------vision------------------------- */
+
+#vision {
+  background-color: rgba(0, 176, 255, 0.3);
+  padding: 80px 0px;
+}
+
+.vision-col-1,
+.vision-col-2,
+.vision-col-3 {
+  flex-basis: 30%;
+}
+
+.vision-col-1 h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  color: rgb(0, 79, 108);
+}
+
+.vision-col-1 p,
+.vision-col-2 p,
+.vision-col-3 p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.6);
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.vision-col-1 .inner-box,
+.vision-col-2 .inner-box,
+.vision-col-3 .inner-box {
+  border: solid 0px rgb(0, 176, 255);
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 10px 10px rgba(0, 79, 108, 0.4);
+}
+
+.vision-col-2 {
+  padding-top: 90px;
+}
+
+.vision-col-1 img,
+.vision-col-2 img,
+.vision-col-3 img {
+  height: 80px;
+  width: 80px;
+}
+
+.vision-col-1 h4,
+.vision-col-2 h4,
+.vision-col-3 h4 {
+  color: rgb(0, 176, 255);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.inner-box hr {
+  color: rgb(0, 176, 255);
+  margin-top: 10px;
+}
+
+.vision-col-1 span,
+.vision-col-2 span,
+.vision-col-3 span {
+  color: rgb(108, 99, 255);
+}
+
+/* ------------------- features section ------------------*/
+
+#features {
+  padding: 80px 0px;
+}
+
+.features-heading {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.features-heading h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  color: rgb(0, 79, 108);
+}
+
+.features-heading hr {
+  color: rgb(0, 79, 108);
+  height: 3px;
+  margin-top: 10px;
+  background-color: rgb(0, 79, 108);
+}
+
+.features-col-1,
+.features-col-2,
+.features-col-3 {
+  flex-basis: 30%;
+}
+
+.features-item {
+  margin-bottom: 60px;
+}
+.features-item-head {
+  display: flex;
+  direction: rtl;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.features-item-head i {
+  margin-left: 10px;
+  font-size: 30px;
+  color: rgb(0, 176, 255);
+}
+
+.features-item-head h4 {
+  font-size: 21px;
+  color: rgb(0, 79, 108);
+}
+
+.features-item p {
+  font-size: 18px;
+  text-align: right;
+  color: rgba(0, 79, 108, 0.7);
+}
+
+.features-col-3 .features-item-head {
+  direction: ltr;
+}
+
+.features-col-3 .features-item-head i {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.features-col-3 .features-item p {
+  text-align: left;
+}
+
+/* --------------------- download section ----------------*/
+
+#download {
+  background-image: url("images/support-1.jpg");
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.inner-download {
+  height: 500px;
+  padding: 80px 0px;
+  background-color: rgba(0, 176, 255, 0.6);
+}
+
+.download-col-1 {
+  flex-basis: 50%;
+}
+
+.download-col-1 h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.download-col-1 p {
+  margin-top: 40px;
+  font-size: 18px;
+  color: rgba(245, 245, 245, 0.7);
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.download-col-1 img {
+  width: 400px;
+}
+
+.download-btn {
+  display: flex;
+}
+
+.download-btn img {
+  margin-right: 20px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.download-col-2 img {
+  width: 500px;
+  margin-top: -180px;
+  filter: drop-shadow(5px 10px 4px #a9a9a9);
+}
+
+/* ------------------ screenshots section ----------------*/
+#screenshot {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.screenshot-heading h4{
+	color: rgb(0, 176, 255);
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.screenshot-heading h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: rgb(0, 79, 108);
+}
+
+.screenshot-heading p {
+	font-size: 18px;
+	color: rgba(0, 79, 108, 0.7);
+}
+
+
+
+.swiper {
+  width: 60%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 590px;
+  border-radius: 20px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.phone-frame {
+	position: absolute;
+	top: 20px;
+	left: 270px;
+	height: 670px;
+	width: 390px;
+	z-index: 3;
+}
+
+/*-------------------- numbers section ----------------------*/
+
+#numbers {
+  background-image: url("images/counter-bg.png");
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.numbers-row {
+  background-color: rgba(0, 176, 255, 0.5);
+  padding: 80px 0px;
+}
+
+.numbers-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.numbers-item {
+  background-color: rgba(0, 79, 108, 0.8);
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.numbers-item-head {
+  display: flex;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.numbers-item i {
+  margin-right: 15px;
+}
+
+.numbers-item p {
+  color: white;
+  font-size: 18px;
+}
+
+/* --------------------- review section --------------------*/
+
+#review {
+  padding: 80px 0px;
+}
+
+
+.review-col-1 {
+  flex-basis: 35%;
+}
+
+.review-col-1 h4 {
+  color: rgb(0, 176, 255);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-col-1 h1 {
+  margin-bottom: 20px;
+  color: rgb(0, 79, 108);
+  font-size: 50px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.review-col-1 p {
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.7);
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.review-col-1 span {
+  background-color: rgb(0, 79, 108);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+/* testimoniamls*/
+
+/* CSS for testimonial cards */
+/* CSS for testimonial cards */
+.testimonial-slide {
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 0 20px;
+  /* max-width: 400px; */
+  margin: 0 auto;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonial-author {
+  font-style: italic;
+  color: #777;
+}
+
+.testimonial-author::before {
+  content: "- ";
+}
+
+/* Add transition effect for smoother appearance changes */
+.testimonial-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add a hover effect to scale up the card slightly on hover */
+.testimonial-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f5f5f5;
+}
+
+/* Testimonial Slider Container */
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 79, 108);
+  align-items: center;
+  height: 100%;
+}
+
+/* ... (previous CSS styles) ... */
+
+
+/* === FAQ Section Styles === */
+
+#faqs {
+  background-color: rgba(0, 176, 255, 0.1);
+  padding: 80px 0px;
+
+}
+
+/* FAQ section background */
+.faq-section {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+/* FAQ item container */
+.faq-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer; /* Add cursor pointer for interactivity */
+}
+
+/* Hover effect for FAQ item */
+.faq-item:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Question container */
+.question {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  display: flex;
+  align-items: center; /* Center vertically */
+  cursor: pointer;
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 10px; /* Add spacing between the icon and text */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Answer container */
+.answer {
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.7);
+  display: none; /* Hide answers by default */
+}
+
+/* Show answers when the question is clicked */
+.question.active .answer {
+  display: block;
+}
+
+/* Styling for plus and minus icons */
+.dropdown-icon.fa-caret-down::before {
+  content: "\f107"; /* Unicode character for plus icon */
+}
+
+.dropdown-icon.fa-caret-up::before {
+  content: "\f106"; /* Unicode character for minus icon */
+}
+
+/* Centered paragraph for additional FAQ text */
+.faq p {
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 79, 108);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+}
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+}
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+/* ... (other CSS styles) ... */
+
+/* ----------------------team*---------------------*/
+
+#team{
+  padding: 80px 0px;
+
+}
+.team h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 79, 108);
+}
+
+.team p {
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* === Team Members Section === */
+
+/* Flex container for team members */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual team member card */
+.team-member {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Team member profile images */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Team member names */
+.team-member h2 {
+  font-size: 1.2rem;
+}
+
+/* Team member descriptions */
+.team-member p {
+  margin: 10px 0;
+}
+
+.team h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 79, 108);
+  text-align: center;
+  padding-bottom: 10px;
+}
+/*contact us*/
+
+#contactus {
+  padding: 80px 0px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+.contact-col-2 form {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+.cus h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 79, 108);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cus p {
+  font-size: 18px;
+  color: rgba(0, 79, 108, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: rgb(0, 79, 108);
+}
+.form-group-merge {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgb(0, 79, 108);
+
+}
+
+.merge-col-1 {
+  flex-basis: 45%;
+}
+
+.merge-col-2 {
+  flex-basis: 45%;
+}
+
+label {
+  display: block;
+  color: rgb(78, 80, 81);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(78, 80, 81, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  text-align: center;
+  margin: auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+mid-btm {
+	width: 20%;
+	margin: auto;
+	display: flex;
+}
+/* contact*/
+.contact-col-1 {
+  flex-basis: 45%; /* Occupy 1/3 of the available space */
+  text-align: center; /* Center the image horizontally */
+}
+
+.contact-col-1 img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.contact-col-2 {
+  flex-basis: 45%; /* Occupy 2/3 of the available space */
+}
+
+/* Your existing CSS styles for the rest of the page */
+
+/* Footer styles */
+footer {
+  background-color: #1d1c1d; /* Purple background color */
+  color: #fff; /* White text color */
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #000; /* Black background for the bottom section */
+}
+
+.footer-col-1 {
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  margin-bottom: 20px;
+  flex-basis: 15%;
+}
+.footer-col-3 {
+  margin-bottom: 20px;
+  flex-basis: 15%;
+}
+.footer-col-4 {
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+.footer-col-4 h4 {
+  margin-bottom: 20px;
+}
+
+.subs-btn {
+  padding: 20px 10px;
+  text-align: center;
+  float: left;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: #136690;
+  width: 60%;
+  vertical-align: middle;
+}
+.subs-btn i {
+  font-size: 26px;
+  float: right;
+}
+
+/* ------------------CSS animations u, r, l ,b---------------------- */
+
+.fade-in-b {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 1s ease-out;
+}
+
+.active-animation-b {
+  opacity: 4;
+  transform: translateY(0);
+}
+
+.fade-in-u {
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 1s ease-out;
+}
+.active-animation-u {
+  opacity: 4;
+  transform: translateY(20%);
+}
+
+.fade-in-l {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: all 1s ease-out;
+}
+.active-animation-l {
+  opacity: 4;
+  transform: translateX(0);
+}
+
+.fade-in-r {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 1s ease-out;
+}
+
+.active-animation-r {
+  opacity: 4;
+  transform: translateX(0);
+}
+
+/*------------------- for mobile screen -------------------*/
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .row {
+    display: block;
+  }
+
+  #header {
+    width: 100%;
+    background-image: url("images/bg-1.png");
+    background-size: cover;
+    height: auto;
+  }
+
+  .header-text {
+    margin-top: 25%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    height: auto;
+  }
+
+  .header-text h1 {
+    font-size: 27px;
+  }
+
+  .header-text p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .header-section {
+    display: block;
+  }
+
+  .header-img {
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+  }
+
+  .header-text .hollow-btn:hover {
+    color: white;
+    border: solid 2px white;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+    color: rgb(0, 79, 108)
+
+  }
+
+  nav .fa-xmark {
+    color: white;
+  }
+
+  nav ul {
+    background: rgb(0, 79, 108);
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  /*---------- mobile about ----------*/
+
+  #about {
+    padding: 40px 0px;
+  }
+
+  .about-col-1 img {
+    display: none;
+  }
+
+  .about-col-2 h4 {
+    font-size: 20px;
+  }
+
+  .about-col-2 h1 {
+    font-size: 27px;
+  }
+
+  .about-col-2 p {
+    font-size: 16px;
+  }
+
+  .about-col-2 li {
+    font-size: 18px;
+  }
+
+  /* --------- mobile vision ---------- */
+
+  #vision {
+    padding: 40px 0px;
+  }
+
+  .vision-col-1 h1 {
+    font-size: 27px;
+  }
+
+  .vision-col-1 p {
+    font-size: 16px;
+  }
+
+  .vision-col-1 h4 , .vision-col-2 h4 , .vision-col-3 h4 {
+    font-size: 20px;
+  }
+
+  .vision-col-2 , .vision-col-3{
+    padding-top: 50px;
+  }
+
+  .vision-col-3 .inner-box {
+    margin-top: 0px;
+  }
+
+  .vision-col-2 .inner-box{
+    margin-top: 0px;
+  }
+
+  /* ---------- mobile features -----------*/
+
+  #features {
+    padding: 0px 0px;
+    margin-top: 0px;
+  }
+
+  .features-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .features-heading h1 {
+    font-size: 27px;
+  }
+
+  .features-item {
+    margin-bottom: 40px;
+  }
+
+  .features-item-head {
+    align-items: center;
+    direction: ltr;
+  }
+
+  .features-item-head i {
+    margin-left: 0;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  .features-item-head h4 {
+    font-size: 20px;
+  }
+
+  .features-item p {
+    font-size: 16px;
+  }
+
+  .features-item p {
+    text-align: justify;
+  }
+
+  .features-col-2 img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .features-col-3 .features-item p {
+    text-align: justify;
+  }
+
+  .features-col-3 .fade-in-r {
+    opacity: 0;
+    transform: translateX(-40%);
+    transition: all 1s ease-out;
+  }
+  .features-col-3 .active-animation-r {
+    opacity: 4;
+    transform: translateX(0);
+  }
+
+  /* ----------- mobile download ------------- */
+
+  #download {
+    height: auto;
+  }
+
+  .inner-download {
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+
+  .download-col-1 h1 {
+    font-size: 27px;
+  }
+
+  .download-col-1 p {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+
+  .download-btn {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .download-btn img {
+    width: 125px;
+    margin: 0px;
+  }
+
+  .download-col-2 img {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .download-btn img {
+
+  }
+
+  /* --------- mobile screenshots section -----------*/
+
+  #screenshot {
+    padding: 40px 0px;
+  }
+
+  .screenshot-heading h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .screenshot-heading h1 {
+    font-size: 27px;
+  }
+
+  .screenshot-heading p {
+    font-size: 16px;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .phone-frame {
+    display: none;
+  }
+
+  /* ----------- mobile numbers section ----------*/
+
+  .numbers-row {
+    padding: 20px 0px;
+  }
+
+  .numbers-wrapper {
+    display: block;
+  }
+
+  .numbers-item {
+    margin: 20px 0px;
+    padding: 30px 60px;
+  }
+
+  .numbers-item-head {
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .numbers-item-head i , .numbers-item-head h4 {
+    font-size: 20px;
+  }
+
+  .numbers-item p {
+    font-size: 16px;
+  }
+
+  /* ------------ mobile review section ---------- */ 
+
+  #review {
+    padding: 40px 0px;
+  }
+
+  .review-col-1 h4 {
+    font-size: 18px;
+  }
+
+  .review-col-1 h1 {
+    font-size: 27px;
+  }
+
+  .review-col-1 p {
+    font-size: 16px;
+  }
+
+  .review-col-1 span {
+    font-size: 14px;
+  }
+
+  .review-col-2 {
+    margin-top: 40px;
+  }
+
+  .testimonial-slide img {
+    border-radius: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  /*  ------------- mobile faq ----------------  */
+
+  #faqs {
+    padding: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 27px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .faq p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .faq-col-1 img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .faq-col-2 .fade-in-r {
+    opacity: 0;
+    transform: translateX(-40%);
+    transition: all 1s ease-out;
+  }
+  .faq-col-2 .active-animation-r {
+    opacity: 4;
+    transform: translateX(0);
+  }
+
+  /* -------------- mobile team ------------- */ 
+
+  #team {
+    padding: 40px 0px;
+  }
+
+  .team h1 {
+    font-size: 27px;
+  }
+
+  .team p {
+    font-size: 16px;
+  }
+
+  /* --------------- mobile contactus ---------------- */
+
+  #contactus {
+    padding: 40px 0px;
+  }
+
+  .cus h1 {
+    font-size: 27px;
+    margin: 0px;
+  }
+
+  .cus p {
+    font-size: 16px;
+  }
+
+  .contact-col-1 img {
+    margin: 20px 0px;
+  }
+
+  .merge-col-1 label {
+    font-size: 16px;
+  }
+
+  /* ----------------- mobile footer ------------------ */
+
+  .footer-content {
+    height: auto;
+  }
+
+  .footer-col-1 h4 , .footer-col-2 h4 , .footer-col-3 h4 , .footer-col-4 h4 {
+    font-size: 20px;
+  }
+
+  .footer-col-1 li a , .footer-col-2 li a , .footer-col-3 li a , .footer-col-4 li a {
+    font-size: 16px;
+  }
+
+  .footer-section {
+    height: 150px;
+  }
+
+  .subs-btn {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    color: white;
+    padding: 20px 0px;
+    font-size: 16px;
+  }
+
+}
+
+
+
+/*----------- for tablet screen -----------*/
+
+@media only screen and (max-width: 820px) and (min-width: 451px) {
+  
+
+  #header {
+    width: 100%;
+    background-image: url("images/bg-1.png");
+    background-size: cover;
+    height: auto;
+  }
+
+  .header-text {
+    margin-top: 10%;
+    flex-basis: 55%;
+    font-size: 24px;
+  }
+
+  .header-text h1 {
+    font-size: 31px;
+  }
+
+  .header-section {
+    display: flex;
+  }
+
+  .header-text p {
+    font-size: 16px;
+  }
+
+
+  .header-img {
+    width: 100%;
+    height: 500px;
+    text-align: right;
+  }
+
+
+  nav .fa-solid {
+    display: block;
+    font-size: 35px;
+    color: rgb(0, 79, 108)
+
+  }
+
+
+  nav .fa-xmark {
+    color: white;
+  }
+
+  nav ul {
+    background: rgb(0, 79, 108);
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+    font-size: 20px;
+  }
+
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  .sub-title {
+    font-size: 50px;
+  }
+
+
+  /*-------------- tablet about us ---------- */
+
+  #about {
+    padding: 40px 0px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .about-col-1 {
+    flex-basis: 45%;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+  }
+
+  .about-col-2 h4 {
+    font-size: 21px;
+  }
+
+  .about-col-2 h1 {
+    font-size: 31px;
+  }
+
+  .about-col-2 p {
+    font-size: 16px;
+  }
+
+  .about-col-2 li {
+    font-size: 16px;
+  }
+
+  /* ------------------- tablet vision mission --------------*/
+
+  #vision {
+    padding: 40px 0px;
+  }
+
+  .vision-col-1 h1 {
+    font-size: 31px;
+  }
+
+  .vision-col-1 p {
+    font-size: 16px;
+  }
+
+  /* ------------------- tablet features --------------*/
+
+  #features {
+    padding: 40px 0px;
+  }
+
+  .features-heading {
+    width: 60%;
+  }
+
+  .features-heading h1 {
+    font-size: 31px;
+  }
+
+  .features-col-2 img {
+    width: 100%;
+    margin-top: 60%;
+    height: 250px;
+  }
+
+  .features-item-head h4 , .features-item-head i {
+    font-size: 18px;
+  }
+
+  .features-item p {
+    font-size: 15px;
+  }
+
+  /* ------------------- tablet download --------------*/
+ 
+
+  .inner-download {
+    padding: 40px 0px;
+  }
+
+  .download-col-1 {
+    flex-basis: 50%;
+    width: 300px;
+  }
+
+  .download-col-1 h1 {
+    font-size: 31px;
+  }
+
+  .download-col-1 p {
+    font-size: 16px;
+  }
+
+  .download-btn img {
+    width: 150px;
+  }
+
+  .download-col-2 {
+    flex-basis: 45%;
+  }
+
+  .download-col-2 img {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  /* ------------------- tablet screenshot --------------*/
+
+  #screenshot {
+    padding: 40px 0px;
+  }
+
+  .screenshot-heading h1 {
+    font-size: 31px;
+  }
+
+  .screenshot-heading p {
+    font-size: 16px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+
+  /* ------------------- tablet numbers --------------*/
+
+  .numbers-row {
+    padding: 40px 0px;
+  }
+
+  .numbers-item {
+    padding: 15px 20px;
+  }
+
+  .numbers-item-head {
+    font-size: 18px;
+  }
+
+  .numbers-item p {
+    font-size: 15px;
+  }
+
+  /* ------------------- tablet review --------------*/
+
+  #review {
+    padding: 40px 0px;
+  }
+
+  .review-col-1 h1 {
+    font-size: 31px;
+  }
+
+  .review-col-1 p {
+    font-size: 16px;
+  }
+
+  .review-col-1 {
+    flex-basis: 40%;
+  }
+
+  .review-col-2 {
+    flex-basis: 55%;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+  }
+
+  /* ------------------- tablet faq --------------*/
+
+  #faqs {
+    padding: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 31px;
+  }
+
+  .faq p {
+    font-size: 16px;
+  }
+
+  .faq-col-1 {
+    flex-basis: 45%;
+  }
+
+  .faq-col-1 img{
+    width: 100%;
+  }
+
+  .faq-col-2 {
+    flex-basis: 50%;
+  }
+
+  .wrapper {
+    padding: 5px 20px;
+  }
+
+  .toggle {
+    font-size: 14px;
+  }
+
+  /* ------------------- tablet team --------------*/
+
+  #team {
+    padding: 40px 0px;
+  }
+
+  .team h1 {
+    font-size: 31px;
+  }
+
+  .team p {
+    font-size: 16px;
+  }
+
+  /* ------------------- tablet team --------------*/
+
+  #contactus {
+    padding: 40px 0px;
+  }
+
+  .cus h1 {
+    font-size: 31px;
+  }
+
+  .cus p {
+    font-size: 16px;
+  }
+
+  /* ------------------- tablet footer --------------*/
+
+  .footer-content {
+    padding: 40px 0px;
+  }
+
+  .subs-btn {
+    width: 100%;
+  }
+
+}
